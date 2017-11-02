@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.date_input.pack.js"></script> 
+	<script>
+		//动态设置像素比
+		var pixelRatio = 1 / window.devicePixelRatio;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+ pixelRatio +',minimum-scale='+ pixelRatio +',maximum-scale='+ pixelRatio +',user-scalable=no" />');
+		
+		//获取html节点
+		var html=document.getElementsByTagName("html")[0];
+		//获取屏幕宽度
+		var pageWidth=html.getBoundingClientRect().width;
+		//屏幕宽度/数值=结果
+		html.style.fontSize=pageWidth/16+"px";
+	
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="css/index_style.css" />
+
+</head>
+<body>
+<div  id="wrapper" class="container">
+	
+	<nav><span></span>预约信息</nav>
+	
+	<section id="count">
+		<form action="php/yy.php" method="post" id="form">
+			<div class="tab">
+				<!--<span></span>-->
+				<input type="text" placeholder="姓名" name="username" />
+			</div>
+			<div class="tab">
+				<!--<span></span>-->
+				<select value="" name="sex">
+					<option>选择性别</option>
+					<option>男</option>
+					<option>女</option>
+				</select>
+			</div>
+			<div class="tab">
+				<!--<span></span>-->
+				<input type="text" class="date_picker" placeholder="出生日期" name="csrq" />
+			</div>
+			<div class="tab">
+				<!--<span></span>-->
+				<input type="text" placeholder="手机号码" name="call" />
+			</div>
+			<div class="tab">
+				<!--<span></span>-->
+				<select value="" name="yyks">
+					<option>选择预约科室</option>
+					<option>儿科</option>
+					<option>骨科</option>
+					<option>肺病科</option>
+				</select>
+			</div>
+			<div class="tab">
+				<!--<span></span>-->
+				<select value="" name="yyzj">
+					<option>选择预约专家</option>
+					<option>王教授</option>
+					<option>李教授</option>
+					<option>陈教授</option>
+				</select>
+			</div>
+			<div  class="tab">
+				<!--<span></span>-->
+				<input type="text" class="date_picker" placeholder="选择预约时间" name="yysj" />
+					
+			</div>
+			<div class="tab">
+				<!--<span></span>-->
+				<textarea class="form-control" rows="3" id="texts" placeholder="病情描述" name="bq"></textarea>
+			</div>
+			<div  class="tab" style="margin-bottom: 1rem;">
+				<input type="reset" id="cz" value="重置" />
+				<input type="submit" id="tj" value="提交" />
+			</div>
+		</form>
+	</section>
+	<section id="con">
+		医生团队
+	</section>
+	<footer id="foot">
+		<div id="appointment" class="active">预约就诊</div>
+		<div id="doctor">医生团队</div>
+	</footer>
+</div>
+<script type="text/javascript" src="js/index_js.js">
+	
+</script>
+</body>
+</html>
+
+

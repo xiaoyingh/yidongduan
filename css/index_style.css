@@ -1,0 +1,370 @@
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+img {
+  border: 0 none;
+}
+body {
+  font-family: "微软雅黑";
+  width: 100%;
+  height: 100%;
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5rem;
+  font-size: 0.65rem;
+  background: #f6f6f6;
+}
+#wrapper nav {
+  position: fixed;
+  width: 100%;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #fff;
+  background: #4a90e2;
+  left: 0;
+  top: 0;
+}
+#wrapper nav span {
+  position: absolute;
+  left: 0.55rem;
+  top: 0.375rem;
+  display: block;
+  width: 0.8rem;
+  height: 1.425rem;
+  background: url(../images/arrow.png) no-repeat center;
+}
+#wrapper #con {
+  width: 100%;
+  height: 23.625rem;
+  padding-top: 2.75rem;
+  display: none;
+}
+#count {
+  width: 100%;
+  height: 23.625rem;
+  padding-top: 2.75rem;
+  display: block;
+}
+#count #form {
+  width: 100%;
+  height: 100%;
+}
+#count #form div.tab {
+  width: 15rem;
+  height: 2.25rem;
+  background: #fff;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+#count #form div.tab input {
+  padding-left: 2.375rem;
+  width: 15rem;
+  height: 2.25rem;
+  font-size: 0.65rem;
+  color: #888;
+  border-radius: 0.25rem;
+  border: none;
+}
+#count #form div.tab select {
+  font-size: 0.65rem;
+  width: 15rem;
+  height: 2.25rem;
+  padding-left: 2.375rem;
+  color: #888;
+  border-radius: 0.25rem;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+#count #form div:nth-of-type(1) input {
+  background: url(../images/person.png) no-repeat 0.7rem center;
+  background-size: 1.15rem 1.05rem;
+  -webkit-background-size: 1.15rem 1.05rem;
+}
+#count #form div:nth-of-type(2) select {
+  background: url(../images/sex.png) no-repeat 0.7rem center;
+  background-size: 1.15rem 1.05rem;
+  -webkit-background-size: 1.15rem 1.05rem;
+}
+#count #form div:nth-of-type(3) input {
+  background: url(../images/data.png) no-repeat 0.7rem center;
+  background-size: 1.15rem 1.05rem;
+  -webkit-background-size: 1.15rem 1.05rem;
+}
+#count #form div:nth-of-type(4) input {
+  background: url(../images/tel.png) no-repeat 0.7rem center;
+  background-size: 1.15rem 1.05rem;
+  -webkit-background-size: 1.15rem 1.05rem;
+}
+#count #form div:nth-of-type(5) select {
+  background: url(../images/order.png) no-repeat 0.7rem center;
+  background-size: 1.15rem 1.05rem;
+  -webkit-background-size: 1.15rem 1.05rem;
+}
+#count #form div:nth-of-type(6) select {
+  background: url(../images/expert.png) no-repeat 0.7rem center;
+  background-size: 1.15rem 1.05rem;
+  -webkit-background-size: 1.15rem 1.05rem;
+}
+#count #form div:nth-of-type(7) input {
+  background: url(../images/time.png) no-repeat 0.7rem center;
+  background-size: 1.15rem 1.05rem;
+  -webkit-background-size: 1.15rem 1.05rem;
+}
+#count #form div:nth-of-type(8) textarea {
+  background: url(../images/describe.png) no-repeat 0.7rem 0.6rem;
+  background-size: 1.15rem 1.05rem;
+  -webkit-background-size: 1.15rem 1.05rem;
+}
+#count #form div:nth-of-type(3) .date_selector,
+#count #form div:nth-of-type(7) .date_selector,
+#count #form div:nth-of-type(3) .date_selector *,
+#count #form div:nth-of-type(7) .date_selector * {
+  width: auto;
+  height: auto;
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+#count #form div:nth-of-type(3) .date_selector,
+#count #form div:nth-of-type(7) .date_selector {
+  background: #fbfbfb;
+  border: 1px solid #ccc;
+  padding: 0.25rem;
+  margin: 0;
+  margin-top: -0.025rem;
+  position: absolute;
+  z-index: 100000;
+  display: none;
+  border-radius: 0.075rem;
+  box-shadow: 0 0 0.125rem #aaaaaa;
+  box-shadow: 0 0.05rem 0.05rem #cccccc;
+  width: 13.125rem;
+}
+#count #form div:nth-of-type(3) .date_selector_ieframe,
+#count #form div:nth-of-type(7) .date_selector_ieframe {
+  position: absolute;
+  z-index: 99999;
+  display: none;
+}
+#count #form div:nth-of-type(3) .date_selector .nav,
+#count #form div:nth-of-type(7) .date_selector .nav {
+  width: 12.625rem;
+}
+#count #form div:nth-of-type(3) .date_selector .nav p,
+#count #form div:nth-of-type(7) .date_selector .nav p {
+  clear: none;
+}
+#count #form div:nth-of-type(3) .date_selector .month_nav,
+#count #form div:nth-of-type(7) .date_selector .month_nav,
+#count #form div:nth-of-type(3) .date_selector .year_nav,
+#count #form div:nth-of-type(7) .date_selector .year_nav {
+  margin: 0 0 0.075rem 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+#count #form div:nth-of-type(3) .date_selector .month_nav,
+#count #form div:nth-of-type(7) .date_selector .month_nav {
+  float: left;
+  width: 46%;
+}
+#count #form div:nth-of-type(3) .date_selector .year_nav,
+#count #form div:nth-of-type(7) .date_selector .year_nav {
+  float: right;
+  width: 46%;
+  margin-right: 0.2rem;
+}
+#count #form div:nth-of-type(3) .date_selector .month_name,
+#count #form div:nth-of-type(7) .date_selector .month_name,
+#count #form div:nth-of-type(3) .date_selector .year_name,
+#count #form div:nth-of-type(7) .date_selector .year_name {
+  font-weight: bold;
+  line-height: 0.5rem;
+}
+#count #form div:nth-of-type(3) .date_selector .button,
+#count #form div:nth-of-type(7) .date_selector .button {
+  display: block;
+  position: absolute;
+  top: 0.25rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  line-height: 0.4rem;
+  font-weight: bold;
+  color: #5985c7;
+  text-align: center;
+  font-size: 0.3rem;
+  overflow: hidden;
+  border: 0.025rem solid #cccccc;
+  border-radius: 0.05rem;
+}
+#count #form div:nth-of-type(3) .date_selector .button:hover,
+#count #form div:nth-of-type(7) .date_selector .button:hover,
+#count #form div:nth-of-type(3) .date_selector .button.hover,
+#count #form div:nth-of-type(7) .date_selector .button.hover {
+  background: #5985c7;
+  color: #fff;
+  cursor: pointer;
+  border-color: #3a930d;
+}
+#count #form div:nth-of-type(3) .date_selector .prev,
+#count #form div:nth-of-type(7) .date_selector .prev {
+  left: 0;
+}
+#count #form div:nth-of-type(3) .date_selector .next,
+#count #form div:nth-of-type(7) .date_selector .next {
+  right: 0;
+}
+#count #form div:nth-of-type(3) .date_selector table,
+#count #form div:nth-of-type(7) .date_selector table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  clear: both;
+  margin: 0;
+  width: 12.625rem;
+}
+#count #form div:nth-of-type(3) .date_selector th,
+#count #form div:nth-of-type(7) .date_selector th,
+#count #form div:nth-of-type(3) .date_selector td,
+#count #form div:nth-of-type(7) .date_selector td {
+  width: 2.5em;
+  height: 2em;
+  padding: 0 !important;
+  text-align: center !important;
+  color: #666;
+  font-weight: normal;
+}
+#count #form div:nth-of-type(3) .date_selector th,
+#count #form div:nth-of-type(7) .date_selector th {
+  font-size: 0.3rem;
+}
+#count #form div:nth-of-type(3) .date_selector td,
+#count #form div:nth-of-type(7) .date_selector td {
+  border: 0.025rem solid #f1f1f1;
+  line-height: 2em;
+  text-align: center;
+  white-space: nowrap;
+  color: #5985c7;
+  background: #fff;
+}
+#count #form div:nth-of-type(3) .date_selector td.today,
+#count #form div:nth-of-type(7) .date_selector td.today {
+  background: #eee;
+}
+#count #form div:nth-of-type(3) .date_selector td.unselected_month,
+#count #form div:nth-of-type(7) .date_selector td.unselected_month {
+  color: #ccc;
+}
+#count #form div:nth-of-type(3) .date_selector td.selectable_day,
+#count #form div:nth-of-type(7) .date_selector td.selectable_day {
+  cursor: pointer;
+}
+#count #form div:nth-of-type(3) .date_selector td.selected,
+#count #form div:nth-of-type(7) .date_selector td.selected {
+  background: #2b579a;
+  color: #fff;
+  font-weight: bold;
+}
+#count #form div:nth-of-type(3) .date_selector td.selectable_day:hover,
+#count #form div:nth-of-type(7) .date_selector td.selectable_day:hover,
+#count #form div:nth-of-type(3) .date_selector td.selectable_day.hover,
+#count #form div:nth-of-type(7) .date_selector td.selectable_day.hover {
+  background: #5985c7;
+  color: #fff;
+}
+#count #form div:nth-of-type(8) {
+  position: relative;
+  height: 3.5rem;
+}
+#count #form div:nth-of-type(8) span {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#count #form div:nth-of-type(8) #texts {
+  width: 100%;
+  height: 3.5rem;
+  padding-top: 0.6rem;
+  text-indent: 2.375rem;
+  border: none;
+  font-size: 0.65rem;
+  color: #888;
+}
+#count #form div:nth-of-type(9) {
+  position: relative;
+  height: 1.875rem;
+}
+#count #form div:nth-of-type(9) input {
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: center;
+  padding-left: 0;
+  width: 7.375rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  -webkit-border-radius: 0.25rem 0.25rem 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+#count #form div:nth-of-type(9) #cz {
+  float: left;
+  background: #e45331;
+}
+#count #form div:nth-of-type(9) #tj {
+  float: right;
+  background: #20b40d;
+}
+#foot {
+  width: 100%;
+  height: 2.5rem;
+  border-top: 1px solid #e4e4e4;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+#foot div {
+  width: 50%;
+  height: 2.5rem;
+  text-align: center;
+  float: left;
+  font-size: 0.6rem;
+  line-height: 3.7rem;
+  color: #888888;
+}
+#foot div.active {
+  color: #4d92e2;
+}
+#foot div:nth-of-type(1) {
+  background: url(../images/doctor.png) no-repeat center 0.25rem;
+  background-size: 1.1rem 1rem;
+  -webkit-background-size: 44 40rem 1rem;
+}
+#foot div:nth-of-type(2) {
+  background: url(../images/team.png) no-repeat center 0.25rem;
+  background-size: 1.1rem 1rem;
+  -webkit-background-size: 44 40rem 1rem;
+}
